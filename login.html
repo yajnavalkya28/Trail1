@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Digital Library</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white flex justify-center items-center min-h-screen">
+    <div class="bg-gray-800 p-8 rounded-lg shadow-xl w-full max-w-sm">
+        <h1 class="text-3xl font-bold text-blue-400 mb-6 text-center">Library Login</h1>
+
+        <div class="space-y-4">
+            <div>
+                <label for="username" class="block text-sm font-medium text-gray-300 mb-1">Username</label>
+                <input type="text" id="username" placeholder="Enter your username" class="w-full px-4 py-2 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+            </div>
+            <div>
+                <label for="password" class="block text-sm font-medium text-gray-300 mb-1">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" class="w-full px-4 py-2 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+            </div>
+
+            <button onclick="loginUser()" class="w-full bg-green-600 py-2.5 rounded font-bold hover:bg-green-700 transition duration-300 shadow-md">Login</button>
+
+            <p id="validationMessage" class="text-red-500 text-sm text-center h-4"></p> <!-- Placeholder for messages -->
+             <p class="text-center text-sm text-gray-400 mt-4">
+                No account? This is a demo. Use predefined credentials. <br> <a href="index.html" class="text-blue-400 hover:underline">Back to Home</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
